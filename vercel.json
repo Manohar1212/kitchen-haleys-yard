@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        { "type": "header", "key": "user-agent", "value": ".*(iPhone|iPad|iPod).*" }
+      ],
+      "destination": "https://apps.apple.com/in/app/kitchen-at-haleys-yard/id6748067560",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        { "type": "header", "key": "user-agent", "value": ".*(Android).*" }
+      ],
+      "destination": "https://play.google.com/store/search?q=THE%20KITCHEN%20AT%20HALEYS%20YARD&c=apps&hl=en_SG",
+      "permanent": false
+    }
+  ]
+}
