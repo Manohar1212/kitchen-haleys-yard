@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Kitchen at Haley's Yard — Download the App</title>
+<meta name="description" content="Download The Kitchen at Haley's Yard app on iOS or Android.">
+<meta name="theme-color" content="#1C4CCF">
+<meta property="og:title" content="The Kitchen at Haley's Yard">
+<meta property="og:description" content="Order your favourites — Good Food. Made Fresh. Made for You.">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0;min-height:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:linear-gradient(180deg,#FFFDF6 0%,#F4EFE0 100%);
+    color:#0F2359;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:32px 20px;
+  }
+  .card{
+    width:100%;max-width:420px;text-align:center;
+    background:#fff;border-radius:24px;padding:36px 28px;
+    box-shadow:0 20px 50px rgba(15,35,89,.12);
+  }
+  .logo{width:160px;height:auto;margin:0 auto 16px;display:block}
+  h1{margin:8px 0 4px;font-size:22px;font-weight:800;letter-spacing:-.3px}
+  .sub{margin:0 0 22px;font-size:14px;color:#4a5980}
+  .btn{
+    display:flex;align-items:center;gap:14px;justify-content:flex-start;
+    background:#000;color:#fff;text-decoration:none;border-radius:14px;
+    padding:14px 18px;margin:10px 0;font-weight:600;
+  }
+  .btn svg{width:30px;height:30px;flex-shrink:0}
+  .btn .col{display:flex;flex-direction:column;line-height:1.05;text-align:left}
+  .btn .top{font-size:11px;opacity:.85;font-weight:500}
+  .btn .bot{font-size:20px;font-weight:700;letter-spacing:-.3px}
+  .status{margin-top:18px;font-size:13px;color:#4a5980;min-height:20px}
+  .foot{margin-top:18px;font-size:12px;color:#7585a8}
+  noscript .status{display:none}
+</style>
+</head>
+<body>
+<main class="card">
+  <img class="logo" src="logo.png" alt="The Kitchen at Haley's Yard">
+  <h1>The Kitchen at Haley's Yard</h1>
+  <p class="sub">Good Food. Made Fresh. Made for You.</p>
+
+  <a id="ios" class="btn" href="https://apps.apple.com/in/app/kitchen-at-haleys-yard/id6748067560">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.05 12.04c-.02-2.16 1.77-3.2 1.85-3.25-1.01-1.48-2.58-1.68-3.14-1.71-1.34-.13-2.61.79-3.29.79-.69 0-1.74-.77-2.86-.75-1.47.02-2.83.85-3.59 2.17-1.53 2.65-.39 6.58 1.1 8.74.73 1.05 1.6 2.24 2.74 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.66-2.13.84-1.22 1.18-2.41 1.2-2.47-.03-.01-2.31-.89-2.33-3.52zM14.94 5.62c.6-.73 1.01-1.74.9-2.75-.87.04-1.93.58-2.55 1.31-.55.64-1.04 1.67-.91 2.66.97.07 1.96-.49 2.56-1.22z"/></svg>
+    <div class="col"><span class="top">Download on the</span><span class="bot">App Store</span></div>
+  </a>
+
+  <a id="android" class="btn" href="https://play.google.com/store/search?q=THE%20KITCHEN%20AT%20HALEYS%20YARD&c=apps&hl=en_SG">
+    <svg viewBox="0 0 24 24"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00C3FF"/><stop offset="1" stop-color="#00A1F1"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE000"/><stop offset="1" stop-color="#FFBD00"/></linearGradient><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF3A44"/><stop offset="1" stop-color="#C31162"/></linearGradient><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00DA7A"/><stop offset="1" stop-color="#00A05A"/></linearGradient></defs><path fill="url(#g1)" d="M3.4 2.6C3.15 2.86 3 3.27 3 3.79v16.42c0 .52.15.93.4 1.19l8.4-9.4-8.4-9.4z"/><path fill="url(#g2)" d="M16.7 14.66l-3.05-3.66 3.05-3.66 4.55 2.6c1.13.65 1.13 1.47 0 2.12l-4.55 2.6z"/><path fill="url(#g3)" d="M11.8 12l-8.4 9.4c.4.42 1.07.47 1.83.04l11.47-6.55-4.9-2.89z"/><path fill="url(#g4)" d="M11.8 12L16.7 9.34 5.23 2.79c-.76-.43-1.43-.38-1.83.04l8.4 9.17z"/></svg>
+    <div class="col"><span class="top">GET IT ON</span><span class="bot">Google Play</span></div>
+  </a>
+
+  <p class="status" id="status"></p>
+  <p class="foot">© The Kitchen at Haley's Yard</p>
+</main>
+<script>
+(function(){
+  var IOS = "https://apps.apple.com/in/app/kitchen-at-haleys-yard/id6748067560";
+  var AND = "https://play.google.com/store/search?q=THE%20KITCHEN%20AT%20HALEYS%20YARD&c=apps&hl=en_SG";
+  var ua = navigator.userAgent || "";
+  var status = document.getElementById("status");
+
+  var isIOS = /iPad|iPhone|iPod/.test(ua) ||
+              (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var isAndroid = /android/i.test(ua);
+
+  if (isIOS) {
+    status.textContent = "Opening App Store…";
+    location.replace(IOS);
+  } else if (isAndroid) {
+    status.textContent = "Opening Google Play…";
+    location.replace(AND);
+  } else {
+    status.textContent = "Choose your platform above to download.";
+  }
+})();
+</script>
+</body>
+</html>
