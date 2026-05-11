@@ -13,7 +13,7 @@
       "has": [
         { "type": "header", "key": "user-agent", "value": ".*(Android).*" }
       ],
-      "destination": "https://play.google.com/store/search?q=THE%20KITCHEN%20AT%20HALEYS%20YARD&c=apps&hl=en_SG",
+      "destination": "https://play.google.com/store/apps/details?id=com.cityteam.kitchen_at_haleys_yard",
       "permanent": false
     }
   ]
